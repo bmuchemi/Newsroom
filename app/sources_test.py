@@ -18,6 +18,7 @@ class SourcesTest(unittest.TestCase):
 
     def test_init(self):
         '''
+        confirms that the object is instantiated correctly
         '''
         self.new_source.id = 'bbc-news'
         self.new_source.name='BBC News'
