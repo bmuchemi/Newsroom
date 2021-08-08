@@ -45,9 +45,11 @@ def process_results(news_list):
     for news_item in news_list:
         id = news_item.get('id')
         name = news_item.get('name')
-
+        description = news_item.get('description')
+        
         if name:
-            news_object = Sources(id,name)
+            news_object = Sources(id,name,description)
             data_results.append(news_object)
+
 
     return data_results

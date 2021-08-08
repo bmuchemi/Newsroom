@@ -1,3 +1,4 @@
+{% import 'macros.html' as macro%}
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,11 +11,9 @@
     </head>
     <body>
         <!-- Popular news section  -->
-        <h3> Popular News</h3>
-         <ul>
-            {% for popular_news in popular %}
-                <li>{{ popular_news.name}}</li>
-            {% endfor %}
-        </ul>
+            <h3> Popular News</h3>
+            <ul>
+                {{ macro.displayNews(popular)}}
+           </ul>
     </body>
 </html>

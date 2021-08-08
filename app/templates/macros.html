@@ -1,0 +1,7 @@
+{% macro displayNews(popular) %}
+
+    {% for popular_news in popular %}
+    <li>{{ popular_news.name}}---{{  popular_news.description}}</li>
+    {% endfor %}
+
+{% endmacro %}
