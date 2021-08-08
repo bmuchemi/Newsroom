@@ -16,6 +16,12 @@ class SourcesTest(unittest.TestCase):
     def test_instance(self):
         self.assertTrue(isinstance(self.new_source,Sources))
 
+    def test_init(self):
+        '''
+        '''
+        self.new_source.id = 'bbc-news'
+        self.new_source.name='BBC News'
+
 
 if __name__ == '__main__':
     unittest.main()
