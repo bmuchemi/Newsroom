@@ -46,10 +46,27 @@ def process_results(news_list):
         id = news_item.get('id')
         name = news_item.get('name')
         description = news_item.get('description')
-        
+
         if name:
             news_object = Sources(id,name,description)
             data_results.append(news_object)
 
 
     return data_results
+
+def get_movie(id):
+    get_news_details_url = base_url.format(id,api_key)
+
+    with urllib.request.urlopen(get_news_details_url) as url:
+        news_details_data = url.read()
+        news_details_response = json.loads(news_details_data)
+
+        news_object = None
+        if news_details_response:
+            id = news_details_response.get('id')
+            name = news_details_response.get('name')
+            description = news_details_response.get('description')
+        
+            news_object = Sources(id,name,description)
+
+    return news_object
