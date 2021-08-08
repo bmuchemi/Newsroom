@@ -5,10 +5,16 @@
         {% if title %}
         <title> {{ title }}</title>
         {% else %}
-        <title> Welcome to the best Movie Review website </title>
+        <title> Welcome to the best News Review website </title>
         {% endif %}
     </head>
     <body>
-
+        <!-- Popular news section  -->
+        <h3> Popular News</h3>
+         <ul>
+            {% for popular_news in popular %}
+                <li>{{ popular_news.name}}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
