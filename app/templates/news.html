@@ -5,10 +5,14 @@
 
     <!-- Poster background -->
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
-            <h3>{{ popular_news.name }}</h3>
 
-            <p class="overview"> {{ popular_news.description }}</p>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{popular_articles.urlToImage}}) no-repeat center center">
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
+            <h3>{{ popular_articles.name }}</h3>
+
+            <p class="overview"> {{ popular_articles.content }}</p>
         </div>
     </div>
 
