@@ -1,16 +1,33 @@
-    <body>
-        <!-- Popular news section  -->
-            <h3>Popular articles</h3>
-            {% for popular_articles in article %}
-            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
-            <img src="{{popular_news.urlToImage}}" alt="" class="img-responsive">
-            <li class="text-center">
-                <a href="{{popular_news.url}}">
-                    {{ popular_articles.name}}
-                </a>
-            </li>
-            </div>
-            {% endfor%}
-    
-    </body>
+{% extends "base.html" %}
 
+<!-- title -->
+{% block title %} THE NATIVE | Home {% endblock %}
+
+<!-- content -->
+{% block content %}
+<div class="container">
+    <!-- sources -->
+    <div class="nav-scroller bg-dark p-0">
+        <nav class="d-flex wrap justify-content-between">
+            {% for item in news_sources%}
+            <a href="/articles/{{item.id}}" class="p-2 text-light">{{item.name | upper }}</a> {% endfor %}
+        </nav>
+    </div>
+
+    <!-- trending -->
+    <div class="row hidden-md-up mt-3">
+        {% for article in trending_article %}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-block">
+                    <img src="{{article.url_to_image}}" class="card-img-top" alt="">
+                    <a href="{{article.url}} " class="card-link"> 
+                        <p class="card-text text-secondary">{{ article.title }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
+</div>
