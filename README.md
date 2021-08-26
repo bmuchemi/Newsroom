@@ -1,4 +1,4 @@
-### **THE NATIVE POST**
+### **NEWSROOM**
 ****
 #### Authors
 [Benjamin Muchemi](https://github.com/bmuchemi)
