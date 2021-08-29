@@ -11,14 +11,14 @@ def configure_request(app):
     global key, url, newsapi
     key = app.config['API_KEY']
     url = app.config['SOURCE_URL']
-    newsapi = NewsApiClient(api_key=key)
+    newsapi = NewsApiClient(api_key='b6f5cab23a514902a53ba60e0a0b09f8')
 
 
 def sources():
     '''
     function that gets all english nes sources in a list
     '''
-    data = newsapi.get_sources(language='en',country='us')
+    data = newsapi.get_sources(language='en',country='ca')
     data_list = data['sources']
     source_list=[]
     for item in data_list:
