@@ -7,7 +7,7 @@ class TestArticles(unittest.TestCase):
     def setUp(self):
         '''
         '''
-        self.new_article=Articles(' Trump blasts left-wing cultural revolution','linda', 'this is a description' ,'https://www.google.com','https://www.google.com/image', '2020-07-04T12:34:51Z')
+        self.new_article=Articles('Trump blasts left-wing cultural revolution','linda', 'this is a description' ,'https://www.google.com','https://www.google.com/image', '2020-07-04T12:34:51Z')
 
     def test_instance(self):
         '''

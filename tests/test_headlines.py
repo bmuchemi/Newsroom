@@ -7,7 +7,7 @@ class SourcesTest(unittest.TestCase):
     def setUp(self):
         '''
         '''
-        self.top_article = Headlines( 'bbc-news','https://www.google.com/img','https://www.google.com')
+        self.top_article = Headlines('bbc-news','https://www.google.com/img','https://www.google.com')
 
     def test_source(self):
         '''

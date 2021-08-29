@@ -1,6 +1,6 @@
 from .models import Sources, Articles, Headlines
 import urllib.request, json
-from newsapi.newsapi_client import NewsApiClient
+from newsapi import NewsApiClient
 
 
 key = None
@@ -18,7 +18,7 @@ def sources():
     '''
     function that gets all english nes sources in a list
     '''
-    data = newsapi.get_sources(language='en',country='ca')
+    data = newsapi.get_sources(language='en',country='us')
     data_list = data['sources']
     source_list=[]
     for item in data_list:

@@ -7,7 +7,7 @@ class SourcesTest(unittest.TestCase):
     def setUp(self):
         '''
         '''
-        self.new_source = Sources( 'bbc-news','BBC News')
+        self.new_source = Sources('bbc-news','BBC News')
 
     def test_source(self):
         '''

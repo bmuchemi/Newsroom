@@ -5,4 +5,4 @@ from . import main
 def not_found(error):
     '''
     '''
-    return render_template('error.html '), 404
+    return render_template('error.html'), 404

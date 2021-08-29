@@ -8,7 +8,7 @@ def homepage():
     trending_article = headlines()
     return render_template("index.html", news_sources=news_sources, trending_article=trending_article)
 
-@main.route('/articles/<id>')  
+@main.route('/articles/<id>')
 def all_articles(id):
     article_source = articles(id)
-    return render_template("articles.html",article_source=article_source)
+    return render_template("articles.html", article_source=article_source)

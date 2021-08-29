@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 <!-- title -->
-{% block title %} THE NATIVE | Home {% endblock %}
+{% block title %} NEWSROOM | Home {% endblock %}
 
 <!-- content -->
 {% block content %}
@@ -9,8 +9,12 @@
     <!-- sources -->
     <div class="nav-scroller bg-dark p-0">
         <nav class="d-flex wrap justify-content-between">
-            {% for item in news_sources%}
-            <a href="/articles/{{item.id}}" class="p-2 text-light">{{item.name | upper }}</a> {% endfor %}
+            <div class="row">
+                <div class="col-lg-12">
+                    {% for item in news_sources%}
+                    <a href="/articles/{{item.id}}" class="p-2 text-light">{{item.name | upper }}</a> {% endfor %}
+                </div>
+            </div>
         </nav>
     </div>
 
@@ -21,7 +25,7 @@
             <div class="card">
                 <div class="card-block">
                     <img src="{{article.url_to_image}}" class="card-img-top" alt="">
-                    <a href="{{article.url}} " class="card-link"> 
+                    <a href="{{article.url}} " class="card-link">
                         <p class="card-text text-secondary">{{ article.title }}</p>
                     </a>
                 </div>

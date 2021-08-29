@@ -1,10 +1,10 @@
-### **NEWSROOM**
+### *NEWSROOM**
 ****
 #### Authors
-[Benjamin Muchemi](https://github.com/bmuchemi)
+[BENJAMIN MUCHEMI](https://github.com/bmuchemi)
 
 #### **Description**
-*This is a flask app where users can view news from various sources and variou news channels.*
+*Is a flask application that lists and previews news articles from various sources using the NEWS API.*
 
 #### Getting Started
 - Clone this repo and ```cd``` into the folder
@@ -29,10 +29,8 @@ $ source virtual/bin/activate
 1. Flask
 2. HTML5
 3. Bootstrap4
-4. Python3
-5. Markdown
-6. CSS
-
+4. Markdown
+5. python3
 
 #### **Contact**
 >Benjamin Muchemi - bmuchemi55@gmail.com
